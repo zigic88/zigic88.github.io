@@ -5,13 +5,13 @@ date:   2017-06-21
 ---
 
 EditText is a user interface element for entering and modifying text. When you define an edit text widget, you must specify the TextView_inputType attribute. For example, for plain text input set **inputType** to "text": 
-```sh
+{% highlight xml %}
 <EditText
      android:id="@+id/plain_text_input"
      android:layout_height="wrap_content"
      android:layout_width="match_parent"
      android:inputType="text"/>
-```     
+{% endhighlight %} 
 We can add drawable into EditText, so the source code example like below :
 ```sh
  <EditText
