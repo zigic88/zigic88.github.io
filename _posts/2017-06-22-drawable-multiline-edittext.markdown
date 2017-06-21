@@ -13,7 +13,7 @@ EditText is a user interface element for entering and modifying text. When you d
      android:inputType="text"/>
 {% endhighlight %} 
 We can add drawable into EditText, so the source code example like below :
-```sh
+{% highlight xml %}
  <EditText
      android:id="@+id/plain_text_input"
      android:layout_height="wrap_content"
@@ -21,10 +21,10 @@ We can add drawable into EditText, so the source code example like below :
      android:inputType="text"
      android:drawableLeft="@drawable/ic_cellphone_android"
      android:drawablePadding="8dp"/>
-```
+{% endhighlight %} 
 If we want to change EditText inputType to "Multiline", we can changed **android:inputType="text"** to
 **android:inputType="textMultiLine"** and add some additional property like **"android:maxLines"** or **"android:scrollbars"**.
-```sh
+{% highlight xml %}
 <EditText
      android:id="@+id/plain_text_input"
      android:layout_height="wrap_content"
@@ -34,7 +34,7 @@ If we want to change EditText inputType to "Multiline", we can changed **android
      android:scrollbars="vertical"
      android:drawableLeft="@drawable/ic_cellphone_android"
      android:drawablePadding="8dp"/>
-```
+{% endhighlight %} 
 Now, you can run your this project and you got this result :
 
 ----------
@@ -44,7 +44,7 @@ Now, you can run your this project and you got this result :
 As we see, that drawable icon going down to middle center of the EditText, like a picture above. To make that drawable icon stay on left top position, **create a xml drawable @drawable/custom_multiline_edittext**
 
 **custom_multiline_edittext.xml**
-```sh
+{% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item><layer-list>
@@ -55,9 +55,9 @@ As we see, that drawable icon going down to middle center of the EditText, like 
     </item>
     </layer-list></item>
 </selector>
-```
+{% endhighlight %} 
 then set your EditText background **android:background="@drawable/custom_multiline_edittext"**, like below :
-```sh
+{% highlight xml %}
 <EditText
       android:id="@+id/plain_text_input"
         android:layout_width="match_parent"
@@ -71,7 +71,7 @@ then set your EditText background **android:background="@drawable/custom_multili
         android:maxLines="4"
         android:scrollbars="vertical"
         android:textSize="16sp"/>
-```
+{% endhighlight %} 
 and then, we got result like below :
 
 ---
