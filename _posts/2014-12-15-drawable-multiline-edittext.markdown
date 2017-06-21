@@ -4,8 +4,6 @@ title:  "Add drawable to Multiline EditText's top left corner"
 date:   2017-06-21
 ---
 
-# Add drawable to Multiline EditText's top left corner
-
 EditText is a user interface element for entering and modifying text. When you define an edit text widget, you must specify the TextView_inputType attribute. For example, for plain text input set **inputType** to "text": 
 ```sh
 <EditText
