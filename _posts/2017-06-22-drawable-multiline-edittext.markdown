@@ -76,6 +76,6 @@ then set your EditText background **android:background="@drawable/custom_multili
 and then, we got result like below :
 
 ---
-![Image2](https://drive.google.com/uc?id=0Bzu9omikbG_SVjlUU0dzRzlCS28)
+<img src="{{ '/assets/img/2017-07-22b.png' | prepend: site.baseurl }}" alt=""> 
 
 ---
