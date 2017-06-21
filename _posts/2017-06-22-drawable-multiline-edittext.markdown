@@ -41,7 +41,7 @@ Now, you can run your this project and you got this result :
 ![Image1](https://drive.google.com/uc?id=0Bzu9omikbG_SMVh6aHA5U3Y2WDA)
 
 ----------
-As we see, that drawable icon going down to middle center of the EditText, like a picture above. To make that drawable icon stay on left top position, **create a xml drawable @drawable/custom_multiline_edittext
+As we see, that drawable icon going down to middle center of the EditText, like a picture above. To make that drawable icon stay on left top position, **create a xml drawable @drawable/custom_multiline_edittext**
 
 **custom_multiline_edittext.xml**
 ```sh
