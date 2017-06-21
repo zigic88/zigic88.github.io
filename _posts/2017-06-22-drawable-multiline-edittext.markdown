@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Add drawable to Multiline EditText's top left corner"
-date:   2017-06-22
+date:   2017-06-21
 ---
 
 EditText is a user interface element for entering and modifying text. When you define an edit text widget, you must specify the TextView_inputType attribute. For example, for plain text input set **inputType** to "text": 
@@ -38,7 +38,8 @@ If we want to change EditText inputType to "Multiline", we can changed **android
 Now, you can run your this project and you got this result :
 
 ----------
-![Image1](https://drive.google.com/uc?id=0Bzu9omikbG_SMVh6aHA5U3Y2WDA)
+<img src="{{ '/assets/img/2017-07-22a.png' | prepend: site.baseurl }}" alt=""> 
+
 
 ----------
 As we see, that drawable icon going down to middle center of the EditText, like a picture above. To make that drawable icon stay on left top position, **create a xml drawable @drawable/custom_multiline_edittext**
