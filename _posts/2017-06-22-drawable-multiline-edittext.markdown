@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Add drawable to Multiline EditText's top left corner"
+title:  "Put a Drawable to top left corner at Multiline EditText"
 date:   2017-06-21
 ---
 
-EditText is a user interface element for entering and modifying text. When you define an edit text widget, you must specify the TextView_inputType attribute. For example, for plain text input set **inputType** to "text": 
+EditText is a user interface element for entering and modifying text. When you define an edit text widget, you must specify the TextView_inputType attribute. For example, a plain text input with attribute inputType to “text”:
 {% highlight xml %}
 <EditText
      android:id="@+id/plain_text_input"
@@ -12,7 +12,7 @@ EditText is a user interface element for entering and modifying text. When you d
      android:layout_width="match_parent"
      android:inputType="text"/>
 {% endhighlight %} 
-We can add drawable into EditText, so the source code example like below :
+We can add a drawable into the EditText, so the source code should be like below :
 {% highlight xml %}
  <EditText
      android:id="@+id/plain_text_input"
@@ -35,14 +35,14 @@ If we want to change EditText inputType to "Multiline", we can changed **android
      android:drawableLeft="@drawable/ic_cellphone_android"
      android:drawablePadding="8dp"/>
 {% endhighlight %} 
-Now, you can run your this project and you got this result :
+Now, you can run your this project and then you will get this result :
 
 ----------
 <img src="{{ '/assets/img/2017-07-22a.png' | prepend: site.baseurl }}" alt=""> 
 
 
 ----------
-As we see, that drawable icon going down to middle center of the EditText, like a picture above. To make that drawable icon stay on left top position, **create a xml drawable @drawable/custom_multiline_edittext**
+As we can see, the drawable icon is automatically adjust to the center of the EditText, like a picture above. To make that drawable icon stay on the left top position, **create a xml drawable @drawable/custom_multiline_edittext**
 
 **custom_multiline_edittext.xml**
 {% highlight xml %}
@@ -73,7 +73,7 @@ then set your EditText background **android:background="@drawable/custom_multili
         android:scrollbars="vertical"
         android:textSize="16sp"/>
 {% endhighlight %} 
-and then, we got result like below :
+and then we will get result like below :
 
 ---
 <img src="{{ '/assets/img/2017-07-22b.png' | prepend: site.baseurl }}" alt=""> 
